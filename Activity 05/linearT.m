@@ -14,14 +14,28 @@
 %plot(x,y,'bo-')
 
 
+%D=[1 1 3 3 2 1 3;2 0 0 2 3 2 2];
+%R=[0 1;1 0];
+%RD=R*D;
+%x=RD(1,:);
+%y=RD(2,:);
+%hold on;
+%plot(x,y,'ob-')
+%axis([-1 4 -1 4],'equal');
+%grid on;
+%legend('original','reflected')
+%hold off;
+
+
+
 D=[1 1 3 3 2 1 3;2 0 0 2 3 2 2];
-R=[0 1;1 0];
-RD=R*D;
-x=RD(1,:);
-y=RD(2,:);
+T=[2 0;0 2];
+TD=T*D;
+x=TD(1,:);
+y=TD(2,:);
 hold on;
 plot(x,y,'ob-')
-axis([-1 4 -1 4],'equal');
+axis([-1 7 -1 7],'equal');
 grid on;
-legend('original','reflected')
+legend('original','dilated')
 hold off;
