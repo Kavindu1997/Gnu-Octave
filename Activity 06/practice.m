@@ -38,3 +38,20 @@ strfind('abababa', 'aba')
 str = 'The staff email is xyz@ucsc.cmb.ac.lk'
 pat = '([\w-.])+@([\w-.])+'
 email = regexp(str, pat, 'match')
+
+
+eval('A = [1 2;3 4]')
+%eval('badscript','goodscript')
+
+a1 = 1; n = 1;
+%eval(['a' num2str(n) ' = 5;']);
+disp(['a1 is now ' num2str(a1)]); 
+
+A = repmat([1 2;3 4], 2, 2)
+
+[x,y,z] = deal(zeros(20, 25))
+
+[a, b, c, d] = deal(5)
+[m,n] = deal(1, 10)
+
+[output,status]=python('customers.py')
