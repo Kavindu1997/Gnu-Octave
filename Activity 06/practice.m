@@ -55,3 +55,11 @@ A = repmat([1 2;3 4], 2, 2)
 [m,n] = deal(1, 10)
 
 [output,status]=python('customers.py')
+
+Image = imread('dennis.jpg');
+info = imfinfo ('dennis.jpg');
+disp(info) 
+imshow(Image)
+
+I= rgb2gray (Image);
+imshow(I)
