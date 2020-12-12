@@ -63,3 +63,5 @@ imshow(Image)
 
 I= rgb2gray (Image);
 imshow(I)
+
+dbstep 10;
